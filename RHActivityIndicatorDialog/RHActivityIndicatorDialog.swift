@@ -8,11 +8,11 @@
 
 import UIKit
 
-class RHActivityIndicatorDialog: UIView {
+public class RHActivityIndicatorDialog: UIView {
     
     // MARK: - Type Properties
     
-    enum Style {
+    public enum Style {
         case dark
         case light
     }
@@ -28,7 +28,7 @@ class RHActivityIndicatorDialog: UIView {
     private let activityIndicator: UIActivityIndicatorView
     private let label: UILabel
     
-    var textColor: UIColor {
+    public var textColor: UIColor {
         get {
             return label.textColor
         }
@@ -37,7 +37,7 @@ class RHActivityIndicatorDialog: UIView {
         }
     }
     
-    var font: UIFont {
+    public var font: UIFont {
         get {
             return label.font
         }
@@ -46,7 +46,7 @@ class RHActivityIndicatorDialog: UIView {
         }
     }
     
-    var text: String {
+    public var text: String {
         get {
             return label.text ?? ""
         }
@@ -57,18 +57,18 @@ class RHActivityIndicatorDialog: UIView {
     
     // MARK: - Initialization
     
-    convenience init(text: String) {
+    convenience public init(text: String) {
         self.init(frame: CGRect.zero)
         self.text = text
     }
     
-    convenience init(text: String, style: Style) {
+    convenience public init(text: String, style: Style) {
         self.init(frame: CGRect.zero)
         self.text = text
         setDialogStyle(style)
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         activityIndicator = UIActivityIndicatorView()
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.activityIndicatorViewStyle = .whiteLarge
@@ -100,13 +100,13 @@ class RHActivityIndicatorDialog: UIView {
             ])
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Instance Methods
     
-    override func didMoveToSuperview() {
+    override public func didMoveToSuperview() {
         super.didMoveToSuperview()
         
         if let superview = self.superview {
@@ -125,7 +125,7 @@ class RHActivityIndicatorDialog: UIView {
         }
     }
     
-    func dismiss(completion: (() -> Void)?) {
+    public func dismiss(completion: (() -> Void)?) {
         removeFromSuperview()
         
         if let completion = completion {
@@ -133,7 +133,7 @@ class RHActivityIndicatorDialog: UIView {
         }
     }
     
-    func setDialogStyle(_ style: Style) {
+    public func setDialogStyle(_ style: Style) {
         switch style {
         case .dark:
             setStyle(activityIndicatorColor: UIColor.white,
