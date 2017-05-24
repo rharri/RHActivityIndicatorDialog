@@ -16,18 +16,18 @@ Carthage:
 
 1. Create a Cartfile in your project root
 2. Add the following to the Cartfile:
-    github "rharri/RHActivityIndicatorDialog"
+    `github "rharri/RHActivityIndicatorDialog"`
 3. Run carthage update
 4. Add the RHActivityIndicatorDialog.framework to your project under General -> Linked Frameworks and Libraries 
 (The framework is located in the Carthage/Build/iOS folder)
 5. Select Build Phases
 6. Click the + button and select "New Run Script Phase"
 7. Add the following command:
-    /usr/local/bin/carthage copy-frameworks
+    `/usr/local/bin/carthage copy-frameworks`
 8. Under "Input files", add the following:
-    $(SRCROOT)/Carthage/Build/iOS/RHActivityIndicatorDialog.framework
+    `$(SRCROOT)/Carthage/Build/iOS/RHActivityIndicatorDialog.framework`
 
-You are now ready to use the RHActivityIndicatorDialog Framework!
+You are now ready to use the RHActivityIndicatorDialog!
 
 ## How to use
 
