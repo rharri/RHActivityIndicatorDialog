@@ -35,6 +35,8 @@ You are now ready to use the RHActivityIndicatorDialog!
 Display a dialog with a dark style and the text "Turning Off Reminders..." 
 
 ```Swift
+import RHActivityIndicatorDialog
+
 override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -47,18 +49,20 @@ override func viewDidLoad() {
 Display a dialog with a light style and the text "Loading..."
 
 ```Swift
+import RHActivityIndicatorDialog
+
 override func viewDidLoad() {
-super.viewDidLoad()
+    super.viewDidLoad()
 
-let dialog = RHActivityIndicatorDialog(text: "Loading...", style: .light)
+    let dialog = RHActivityIndicatorDialog(text: "Loading...", style: .light)
 
-self.view.addSubview(dialog)
+    self.view.addSubview(dialog)
 }
 ```
 
 ## Sample Project
 
-Coming Soon...
+https://github.com/rharri/RHActivityIndicatorDialogExample
 
 ## Collaboration
 
