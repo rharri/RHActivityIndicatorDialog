@@ -6,6 +6,8 @@
 
 A simple framework for creating a "busy" dialog view for iOS apps.
 
+<a href="http://imgur.com/IrvrwTB"><img src="http://i.imgur.com/IrvrwTB.gif" title="source: imgur.com" /></a>
+
 ## Features
 
 * Create a dialog view with a stock UIActivityIndicator and text
