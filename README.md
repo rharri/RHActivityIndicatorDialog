@@ -6,6 +6,8 @@
 
 A simple framework for creating a "busy" dialog view for iOS apps.
 
+## Example
+
 <a href="http://imgur.com/IrvrwTB"><img src="http://i.imgur.com/IrvrwTB.gif" title="source: imgur.com" /></a>
 
 ## Features
