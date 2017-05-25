@@ -8,7 +8,8 @@ A simple framework for creating a "busy" dialog view for iOS apps.
 
 ## Features
 
-Coming Soon...
+* Create a dialog view with a stock UIActivityIndicator and text
+* Dark and light styles
 
 ## Installation
 
@@ -31,7 +32,14 @@ You are now ready to use the RHActivityIndicatorDialog!
 
 ## How to use
 
-Coming Soon...
+```Swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let dialog = RHActivityIndicatorDialog(text: "Turning Off Reminders...")
+    
+    self.view.addSubview(dialog)
+```
 
 ## Sample Project
 
