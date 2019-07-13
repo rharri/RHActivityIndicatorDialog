@@ -80,7 +80,7 @@ https://github.com/rharri/RHActivityIndicatorDialogExample
 
 ## Collaboration
 
-Feel free to colloborate!
+Feel free to collaborate!
 
 Submit:
 
